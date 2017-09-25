@@ -7,6 +7,6 @@ RUN mkdir /usr/local/tomcat/webapps/app/ \
 WORKDIR /usr/local/tomcat/webapps/app
 
 COPY /src/main/webapp/WEB-INF/pages/index.jsp index.jsp
-COPY mysql.jar WEB-INF/lib/mysql.jar
+
 
 CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
